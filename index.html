@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page With Carousel And Footer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="https://creative-madeleine-7cfc6e.netlify.app/img/mv-high-resolution-logo-black-transparent.png" alt="Logo" style="color: white;">
+            </div>
+   
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#" class="nav-active">Home</a></li>
+                <li><a href="#">Company</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Shop</a>
+                    <div class="dropdown-content shop-dropdown">
+                        <div class="shop-column">
+                            <h4>Shop by Category</h4>
+                            <a href="#"><i class="fas fa-bicycle"></i> All Bikes</a>
+                            <a href="#"><i class="fas fa-bolt"></i> Electric</a>
+                            <a href="#"><i class="fas fa-city"></i> Urban</a>
+                            <a href="#"><i class="fas fa-mountain"></i> Mountain</a>
+                            <a href="#"><i class="fas fa-tools"></i> Accessories</a>
+                        </div>
+                        <div class="shop-column">
+                            <h4>Explore</h4>
+                            <a href="#"><i class="fas fa-sliders-h"></i> Bike Slider</a>
+                            <a href="#"><i class="fas fa-building"></i> Our Company</a>
+                            <a href="#"><i class="fas fa-headset"></i> Get Support</a>
+                            <a href="#"><i class="fas fa-newspaper"></i> Latest News</a>
+                            <a href="#"><i class="fas fa-user"></i> My Account</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Pages</a>
+                    <div class="dropdown-content">
+                        <a href="#">Bicycles</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Services</a>
+                    </div>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cart">
+                <a href="#">$0 <i class="cart-icon"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="carousel">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+                <img src="./img/achraf-talha-5bwIRGVZX5w-unsplash.jpg" alt="Slide 1">
+                <div class="content">
+                    <h1>Ride without limits</h1>
+                    <h2>High Performance Electric Bicycles</h2>
+                    <p>Performance built to handle any terrain and riding style</p>
+                    <a href="#" class="btn">Shop Bikes</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="./img/florian-kurrasch-IQEEBE11MhA-unsplash.jpg" alt="Slide 2">
+                <div class="content">
+                    <h1>Bicycle Servicing</h1>
+                    <h2>On-Site Skilled Bike Mechanics</h2>
+                    <p>Performance built to handle any terrain and riding style</p>
+                    <a href="#" class="btn">Get in Touch</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="./img/florian-kurrasch-nCj0zBLIaAk-unsplash.jpg" alt="Slide 3">
+                <div class="content">
+                    <h1>Electric Mountain Bikes</h1>
+                    <h2>Built for Adventure</h2>
+                    <p>Explore the outdoors with ease and confidence</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+      
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="top-banner">
+            <div class="container">
+                <div class="banner-item">
+                    <i class="fas fa-box"></i> Free Shipping On Orders Over $50
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-dollar-sign"></i> 60 Day Money Back Guarantee
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-headset"></i> 24/7 Live Support Team
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-content container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="" alt="Logo" style="color: white;">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">All Bikes</a></li>
+                    <li><a href="#">Electric</a></li>
+                    <li><a href="#">Urban</a></li>
+                    <li><a href="#">Mountain</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Get Support</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 1200 Main St. Santa Rosa, CA 93541</li>
+                    <li><i class="fas fa-phone"></i> +1 (888) 123 - 4567</li>
+                    <li><i class="fas fa-envelope"></i> help@shuma-theme.com</li>
+                    <li><i class="fas fa-clock"></i> Mon - Sun: 8AM - 8PM</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="container">
+                <p>All Rights Reserved. Developed by YourCompanyHere</p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
